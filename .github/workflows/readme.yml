@@ -6,7 +6,7 @@ on:
 
 jobs:
   readme:
-    if: startsWith(${{ github.event.issue.title }}, "Add handle")
+    if: startsWith("Add handle", ${{ github.event.issue.title }})
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
